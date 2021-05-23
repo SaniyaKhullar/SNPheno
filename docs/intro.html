@@ -5,20 +5,20 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 Introduction | ADSNPheno Book</title>
-  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="description" content="Please note that this tutorial book explains how to use the ADSNPheno computational pipeline to better understand the role of non-coding SNPs in impacting gene regulation, associated with changes in biological pathways and phenotypes in different health conditions." />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 Introduction | ADSNPheno Book" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta property="og:description" content="Please note that this tutorial book explains how to use the ADSNPheno computational pipeline to better understand the role of non-coding SNPs in impacting gene regulation, associated with changes in biological pathways and phenotypes in different health conditions." />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Chapter 2 Introduction | ADSNPheno Book" />
   
-  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="twitter:description" content="Please note that this tutorial book explains how to use the ADSNPheno computational pipeline to better understand the role of non-coding SNPs in impacting gene regulation, associated with changes in biological pathways and phenotypes in different health conditions." />
   
 
 <meta name="author" content="Saniya Khullar, Daifeng Wang, Ph.D." />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="index.html"/>
-<link rel="next" href="literature.html"/>
+<link rel="next" href="step-0-setup-and-defaults.html"/>
 <script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -158,9 +158,21 @@ div.csl-indent {
 <li><a href="./">ADSNPheno Book</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
-<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
-<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Please Note:</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#data-and-code-location"><i class="fa fa-check"></i><b>1.1</b> Data and Code Location</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#hardware-requirements"><i class="fa fa-check"></i><b>1.2</b> Hardware Requirements</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#support"><i class="fa fa-check"></i><b>1.3</b> Support</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#demo"><i class="fa fa-check"></i><b>1.4</b> Demo</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#summary"><i class="fa fa-check"></i><b>2.1</b> Summary</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#method"><i class="fa fa-check"></i><b>2.2</b> Method</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#adsnpheno-table-of-step-contents"><i class="fa fa-check"></i><b>2.3</b> ADSNPheno Table of Step Contents</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#step-0-please-setup-the-appropriate-workspace-environment"><i class="fa fa-check"></i><b>2.4</b> Step 0: Please setup the appropriate workspace environment</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="step-0-setup-and-defaults.html"><a href="step-0-setup-and-defaults.html"><i class="fa fa-check"></i><b>3</b> Step 0: Setup and Defaults</a></li>
 <li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
 <li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
 <ul>
@@ -191,10 +203,105 @@ div.csl-indent {
             <section class="normal" id="section-">
 <div id="intro" class="section level1" number="2">
 <h1><span class="header-section-number">Chapter 2</span> Introduction</h1>
+<div id="summary" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Summary</h2>
+<p>Genome-wide association studies (GWAS) have found many genetic risk variants associated with Alzheimer’s disease (AD). However, how these risk variants affect deeper phenotypes such as disease progression and immune response remains elusive. Also, our understanding of cellular and molecular mechanisms from disease risk variants to various disease phenotypes is still limited. To address these problems, we developed a computational pipeline of integrated multi-omics analysis from genotype, transcriptomics, epigenomics to phenotypes for revealing gene regulatory
+mechanisms from disease variants to phenotypes.</p>
+</div>
+<div id="method" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> Method</h2>
+<p>This pipeline, ADSNPheno, aims to predict gene regulatory networks of AD risk Single-Nucleotide Polymorphisms (SNPs) to different AD phenotypes. In particular, ADSNPheno first clusters gene co-expression networks and identifies the gene modules for various AD phenotypes. ADSNPheno further predicts the transcription factors (TFs) that significantly regulate the genes in each module, as well as the AD SNPs interrupting the TF binding sites (TFBS) on the regulatory elements. Finally, ADSNPheno constructs a full gene regulatory network linking SNPs, interrupted TFs, and regulatory elements to target genes for each phenotype. This network thus provides mechanistic insights of gene regulation from disease risk variants to AD phenotypes.</p>
+<p>Please note our pipeline, ADSNPheno:</p>
+<p align="center">
+<img width="1500" src="adsnpheno.png">
+</p>
+<p>Please note that we will go over each of these steps of ADSNPheno in the respective chapters of this book. Step 0 is not shown in the pipeline, but it is general setting up of the pipeline and defaults.</p>
+<p>Our application will be the Hippocampus Ca1 gene expression dataset for better understanding molecular mechanisms involved in Alzheimer’s disease progression.</p>
+</div>
+<div id="adsnpheno-table-of-step-contents" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> ADSNPheno Table of Step Contents</h2>
+<p>Please note these steps in ADSNPheno:</p>
+<table>
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Step #</th>
+<th>Step Name</th>
+<th>Chapter in ADSNPheno Book</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>Setup and Defaults</td>
+<td>3</td>
+<td>——</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>Disease gene expression data at the population level</td>
+<td>4</td>
+<td>——</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>Please construct and cluster a gene co-expression network</td>
+<td>5</td>
+<td>——</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Please annotate modular functions by enrichment analysis</td>
+<td>6</td>
+<td>——</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>Please associate disease phenotypes with genes and gene co-expression modules</td>
+<td>7</td>
+<td>——</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Please predict gene regulatory networks for genes and gene co-expression modules</td>
+<td>8</td>
+<td>——</td>
+</tr>
+<tr class="odd">
+<td>6</td>
+<td>Please link disease risk variants (like SNPs) to the gene regulatory networks via TF Binding Site interruption</td>
+<td>9</td>
+<td>——</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td>Please output: Gene regulatory network linking disease variants to disease phenotypes</td>
+<td>10</td>
+<td>SNPs in or near regulatory regions like TF Binding Sites (in promoters and enhancers) for Target Gene (TG) <span class="math inline">\(\Rightarrow\)</span> TFs unable to bind to TFBS <span class="math inline">\(\Rightarrow\)</span> TFs unable to regulate TG <span class="math inline">\(\Rightarrow\)</span> dysregulation of TG (that belongs to a gene co-expression module) impacts various functions and pathways and is associated with various disease phenotypes</td>
+</tr>
+</tbody>
+</table>
+<!-- * Step 0: Setup and Defaults \@ref("Step 0: Setup and Defaults") -->
+<!-- * Step 1: Setup and Defaults \@ref("Step 0: Setup and Defaults") -->
+<!-- * Step 2: Setup and Defaults \@ref("Step 0: Setup and Defaults") -->
+<!-- * Step 3: Setup and Defaults \@ref("Step 0: Setup and Defaults") -->
+<!-- * Step 4: Setup and Defaults \@ref("Step 0: Setup and Defaults") -->
+<!-- * Step 5: Setup and Defaults \@ref("Step 0: Setup and Defaults") -->
+<!-- * Step 6: Setup and Defaults \@ref("Step 0: Setup and Defaults") -->
+<!-- * Step 7: Setup and Defaults \@ref("Step 0: Setup and Defaults") -->
+</div>
+<div id="step-0-please-setup-the-appropriate-workspace-environment" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Step 0: Please setup the appropriate workspace environment</h2>
 <p>You can label chapter and section titles using <code>{#label}</code> after them, e.g., we can reference Chapter <a href="intro.html#intro">2</a>. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter <a href="methods.html#methods">4</a>.</p>
 <p>Figures and tables with captions will be placed in <code>figure</code> and <code>table</code> environments, respectively.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="intro.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, .<span class="dv">1</span>, .<span class="dv">1</span>))</span>
-<span id="cb2-2"><a href="intro.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(pressure, <span class="at">type =</span> <span class="st">&#39;b&#39;</span>, <span class="at">pch =</span> <span class="dv">19</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="intro.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, .<span class="dv">1</span>, .<span class="dv">1</span>))</span>
+<span id="cb1-2"><a href="intro.html#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(pressure, <span class="at">type =</span> <span class="st">&#39;b&#39;</span>, <span class="at">pch =</span> <span class="dv">19</span>)</span></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:nice-fig"></span>
 <img src="bookdown-demo_files/figure-html/nice-fig-1.png" alt="Here is a nice figure!" width="80%" />
 <p class="caption">
@@ -202,10 +309,10 @@ Figure 2.1: Here is a nice figure!
 </p>
 </div>
 <p>Reference a figure by its code chunk label with the <code>fig:</code> prefix, e.g., see Figure <a href="intro.html#fig:nice-fig">2.1</a>. Similarly, you can reference tables generated from <code>knitr::kable()</code>, e.g., see Table <a href="intro.html#tab:nice-tab">2.1</a>.</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="intro.html#cb3-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
-<span id="cb3-2"><a href="intro.html#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(iris, <span class="dv">20</span>), <span class="at">caption =</span> <span class="st">&#39;Here is a nice table!&#39;</span>,</span>
-<span id="cb3-3"><a href="intro.html#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">booktabs =</span> <span class="cn">TRUE</span></span>
-<span id="cb3-4"><a href="intro.html#cb3-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="intro.html#cb2-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(</span>
+<span id="cb2-2"><a href="intro.html#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(iris, <span class="dv">20</span>), <span class="at">caption =</span> <span class="st">&#39;Here is a nice table!&#39;</span>,</span>
+<span id="cb2-3"><a href="intro.html#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">booktabs =</span> <span class="cn">TRUE</span></span>
+<span id="cb2-4"><a href="intro.html#cb2-4" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div>
 <table>
 <caption><span id="tab:nice-tab">Table 2.1: </span>Here is a nice table!</caption>
 <thead>
@@ -363,6 +470,7 @@ Figure 2.1: Here is a nice figure!
 <p>You can write citations, too. For example, we are using the <strong>bookdown</strong> package <span class="citation">(<a href="#ref-R-bookdown" role="doc-biblioref">Xie 2021</a>)</span> in this sample book, which was built on top of R Markdown and <strong>knitr</strong> <span class="citation">(<a href="#ref-xie2015" role="doc-biblioref">Xie 2015</a>)</span>.</p>
 
 </div>
+</div>
 <h3>References</h3>
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-xie2015" class="csl-entry">
@@ -378,7 +486,7 @@ Xie, Yihui. 2015. <em>Dynamic Documents with <span>R</span> and Knitr</em>. 2nd 
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="literature.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="step-0-setup-and-defaults.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -418,7 +526,7 @@ gitbook.start({
 "text": null
 },
 "view": {
-"link": "https://github.com/saniyaKhullar/snpheno/blob/master/01-intro.Rmd",
+"link": "https://github.com/saniyaKhullar/SNPheno/blob/master/01-intro.Rmd",
 "text": null
 },
 "download": ["bookdown-demo.pdf", "bookdown-demo.epub"],

@@ -9,10 +9,45 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-demo
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+description: "Please note that this tutorial book explains how to use the ADSNPheno computational pipeline to better understand the role of non-coding SNPs in impacting gene regulation, associated with changes in biological pathways and phenotypes in different health conditions."
 ---
 
-# Prerequisites
+# Please Note:
+
+## Data and Code Location
+
+Please note that the code and materials for ADSNPheno are available here: [https://github.com/daifengwanglab/adsnpheno](https://github.com/daifengwanglab/adsnpheno).  
+
+This is a tutorial book available to help you better understand the functionality and code involved in ADNSPheno.
+
+
+## Hardware Requirements
+
+Please note that this analysis is based on R 4.0. You will only need a standard computer with enough RAM to support the operations. For predicting gene regulatory networks, a *Linux* system with 32 GB RAM and 32GB storage would be enough to support.
+
+## Support
+
+Please note that this code was developed by Saniya Khullar and Daifeng Wang, Ph.D.
+If you experience any issues with the code or steps in the pipeline, please reach out to Saniya Khullar at skhullar2@wisc.edu and she will be very happy to help you!
+
+YouTube tutorials will also be available on ADSNPheno on [Saniya's YouTube channel](https://www.youtube.com/channel/UCNhVAcIdarXzTCWZ27N1EmQ) to guide you every step of the way. We also have presented our computational pipeline at an [ISCB-SC webinar](https://www.youtube.com/watch?v=ITwEzqhQnZU). 
+
+Please visit our [lab website](https://daifengwanglab.org/) at the University of Wisconsin - Madison, to learn more about our team and our work! 
+
+
+## Demo
+
+This demo applies our general, open-source computational pipeline, **ADSNPheno**, in the context of Alzheimer's disease (AD).  Here, we aim to reveal underlying gene regulatory mechanisms of AD risk variants to different AD phenotypes. Particularly, ADSNPheno first identifies the gene co-expression modules for various AD phenotypes via clustering gene co-expression networks. ADSNPheno further predicts the transcription factors (TFs) that significantly regulate the genes in each module, as well as the AD SNPs interrupting the TF binding sites on the regulatory elements. Finally, ADSNPheno constructs a full gene regulatory network linking SNPs, TFs, and regulatory elements to target genes for each phenotype. This network thus provides mechanistic insights of gene regulation from disease risk variants to the phenotype in AD.
+
+Please note that we provide an example application of ADNSPheno to the Hippocampus Ca1 gene expression data set [GSE1297](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE1297). 
+
+We have also provided the gene expression data that we used for the Lateral Temporal Lobe and for predicting Covid-19 Severity (ICU vs. Non-ICU status) in Covid-19 positive individuals.
+
+
+
+
+
+
 
 This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
 
