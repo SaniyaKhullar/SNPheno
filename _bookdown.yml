@@ -1,8 +1,8 @@
 book_filename: "bookdown-demo"
 output_dir: docs
 delete_merged_file: true
-edit: https://github.com/saniyaKhullar/snpheno/edit/master/%s
-view: https://github.com/saniyaKhullar/snpheno/blob/master/%s
+edit: https://github.com/saniyaKhullar/SNPheno/edit/master/%s
+view: https://github.com/saniyaKhullar/SNPheno/blob/master/%s
 language:
   ui:
     chapter_name: "Chapter "
